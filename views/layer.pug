@@ -1,0 +1,61 @@
+doctype html
+html
+	head
+		title= title || 'profile'
+		meta(charset='utf8')
+		meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+		meta(http-equiv='X-UA-Compatible' content='IE=edge')
+		//- meta(name='viewport' content='width
+		link(rel='stylesheet' href='css/style.css')
+		link(rel='stylesheet' href='//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		block styles
+		block scripts
+	body.light
+		nav.navbar.navbar-expand-lg.bg-light.navbar-dar.mb-5
+			.container
+				a.navbar-brand.text-dark(href='/profile') Profile 
+				button.navbar-toggler(type='button' data-toggle='collapse' data-target='#topNavbar' aria-controls='topNavbar' aria-expanded='false' aria-label='Toggle navigation')
+					span.navbar-toggler-icon
+				#topNavbar.collapse.navbar-collapse
+					ul.navbar-nav.mr-auto
+						li.nav-item
+							a.nav-link.text-dark(href='/projects') Projects 
+						li.nav-item 
+							a.nav-link.text-dark(href='/experience') Experience  
+
+					button.btn.btn-dark.inline(type='button' id='darkMode' onclick="toggleDarkMode()") Dark / Light Mode
+					
+		.container
+			
+			block body
+			
+			//- block footer
+		footer.bg-light.mt-5.p-4
+			div.container-fluid
+				div.row
+					div.col-md-6
+						h4 Github
+						ul.list-unstyled
+							li
+								a.text-dark(href="https://github.com/AlmajedA")  
+									i.fab.fa-github.fa-2x
+			
+					div.col-md-6
+						h4 Social
+						a.text-dark(href="https://www.instagram.com/ammaralmajed/")
+							i.fab.fa-instagram.fa-2x.mr-5
+	
+						a.text-dark(href="https://wa.me/+966542463848")
+							i.fab.fa-whatsapp.fa-2x.mr-5
+						
+						a.text-dark(href="https://t.me/ammarpy")
+							i.fab.fa-telegram.fa-2x.mr-5
+
+						a.text-dark(href="https://twitter.com/c0mpIex_")
+							i.fab.fa-twitter.fa-2x.mr-5
+
+		script(src='//code.jquery.com/jquery-3.3.1.slim.min.js')
+		script(src='//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')
+		script(src='//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')
+		script(src='js/app.js')

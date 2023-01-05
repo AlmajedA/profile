@@ -1,0 +1,51 @@
+nav a {
+  font-weight: bold;
+}
+
+body a {
+  text-decoration-color: grey !important;  
+}
+
+span.university{
+  color: gray;
+  font-size: 85%;
+  font-weight: normal;
+}
+
+body.dark {
+  background-color: #393E46;
+  color: white;
+}
+
+body.light{
+  background-color: #F1F4FFFF;
+  color: black;
+}
+
+nav.bg-dark{
+  background-color: #222831 !important;
+}
+nav.bg-light{
+  background-color: #A2A2A1FF !important;
+}
+
+footer.bg-dark{
+  background-color: #222831 !important;
+  color: white;
+}
+
+footer.bg-light{
+  background-color: #A2A2A1FF !important;
+  color: black;
+
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 110px; 
+}
+
+
+
