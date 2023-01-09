@@ -1,19 +1,19 @@
 extends layer
 block body
     .row 
-        .col 
-            img.img-fluid.rounded(src='images/Me.jpeg' style="width: 80%;")
-        .col 
+        .col-md
+            img.img-fluid.rounded.my-5.d-none.d-md-block(src='images/Me.jpeg' style="width: 80%;")
+        .col-md
             
             h1.p-3 Hello there! I'm Ammar
-            .row.my-2 
+            .row.my-2.mr-2 
                 .col 
                     h5 About me:
                     p 
                         | Hi, My name is Ammar Almajed, and I am from Al-Ahsa in Saudi Arabia. I am currently studing software engineering at my wonderful university 
                         a.text-white(href="http://www.kfupm.edu.sa/Default.aspx" title="The hardest university in the world :)" style="text-decoration: none; font-weight: bold;") KFUPM 
                         |, it gave me many opportunities to improve and change myself so I am loyal to it :). I am passionate about being a person who create new things. 
-            .row.my-2
+            .row.my-2.mr-2
                 .col
                     h5 Education:
                     p  
@@ -37,6 +37,8 @@ block body
                         li Web Development
                         li Mobile Development 
                         li Investment :)
+    
+    
 
                 
 

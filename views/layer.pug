@@ -5,18 +5,19 @@ html
 		meta(charset='utf8')
 		meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
 		meta(http-equiv='X-UA-Compatible' content='IE=edge')
-		//- meta(name='viewport' content='width
+		
 		link(rel='stylesheet' href='css/style.css')
 		link(rel='stylesheet' href='//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 		block styles
 		block scripts
-	body.light
-		nav.navbar.navbar-expand-lg.bg-light.navbar-dar.mb-5
+	body.light.d-flex.flex-column.min-vh-100
+		nav.navbar.navbar-expand-lg.bg-light.navbar-dark.mb-5
 			.container
 				a.navbar-brand.text-dark(href='/profile') Profile 
 				button.navbar-toggler(type='button' data-toggle='collapse' data-target='#topNavbar' aria-controls='topNavbar' aria-expanded='false' aria-label='Toggle navigation')
 					span.navbar-toggler-icon
+				
 				#topNavbar.collapse.navbar-collapse
 					ul.navbar-nav.mr-auto
 						li.nav-item
@@ -31,7 +32,7 @@ html
 			block body
 			
 			//- block footer
-		footer.bg-light.mt-5.p-4
+		footer.footer.bg-light.mt-auto.p-4
 			div.container-fluid
 				div.row
 					div.col-md-6
@@ -43,14 +44,18 @@ html
 			
 					div.col-md-6
 						h4 Social
-						a.text-dark(href="https://www.instagram.com/ammaralmajed/")
-							i.fab.fa-instagram.fa-2x.mr-5
+
+						a.text-dark(href="https://www.linkedin.com/in/ammar-almajed/")
+							i.fab.fa-linkedin.fa-2x.mr-5
 	
 						a.text-dark(href="https://wa.me/+966542463848")
 							i.fab.fa-whatsapp.fa-2x.mr-5
 						
 						a.text-dark(href="https://t.me/ammarpy")
 							i.fab.fa-telegram.fa-2x.mr-5
+
+						a.text-dark(href="https://www.instagram.com/ammaralmajed/")
+							i.fab.fa-instagram.fa-2x.mr-5
 
 						a.text-dark(href="https://twitter.com/c0mpIex_")
 							i.fab.fa-twitter.fa-2x.mr-5

@@ -12,7 +12,9 @@ app.use(express.json());       // to support JSON-encoded bodies
 app.use(express.urlencoded()); // to support URL-encoded bodies
 app.use(express.static(__dirname + '/public'));
 
-
+app.get('/', async function (req, res) {
+	res.render('profile', { title: 'Profile'})
+})
 app.get('/profile', async function (req, res) {
 	res.render('profile', { title: 'Profile'})
 })
